@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía Interactiva de Godot</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>🌟 Godot Engine 🌟</h1>
+    </header>
+
+    <nav>
+        <button class="nav-button active" data-section="inicio">
+            📖 ¿Qué es?
+        </button>
+        <button class="nav-button" data-section="uso">
+            📦 ¿Para qué sirve?
+        </button>
+        <button class="nav-button" data-section="pasos">
+            ➡️ Paso a Paso
+        </button>
+        <button class="nav-button" data-section="final">
+            ⬇️ Exportación
+        </button>
+    </nav>
+
+    <main>
+        <!-- Sección: ¿Qué es? -->
+        <section id="inicio" class="section active">
+            <div class="card">
+                <h2 class="card-title">📖 ¿Qué es Godot Engine?</h2>
+                <p class="mb-2">
+                    Godot es un motor de videojuegos de <strong>código abierto</strong> y gratuito. 
+                    Se utiliza para desarrollar juegos en 2D y 3D, y soporta múltiples lenguajes 
+                    de programación, incluyendo <em>GDScript</em>.
+                </p>
+                <div class="grid grid-cols-2">
+                    <div class="card bg-blue">
+                        <h3 class="mb-2">Características Principales</h3>
+                        <ul>
+                            <li>Totalmente gratuito y open source</li>
+                            <li>Soporte para 2D y 3D</li>
+                            <li>Editor visual intuitivo</li>
+                            <li>Sistema de nodos flexible</li>
+                        </ul>
+                    </div>
+                    <div class="card bg-purple">
+                        <h3 class="mb-2">Ventajas</h3>
+                        <ul>
+                            <li>Liviano y eficiente</li>
+                            <li>Gran comunidad activa</li>
+                            <li>Documentación completa</li>
+                            <li>Multiplataforma</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección: ¿Para qué sirve? -->
+        <section id="uso" class="section">
+            <div class="card">
+                <h2 class="card-title">📦 ¿Para qué sirve?</h2>
+                <div class="grid grid-cols-3">
+                    <div class="card bg-green text-center">
+                        <h3 class="mb-2">Juegos 2D/3D</h3>
+                        <p>Crea juegos completos en 2D y 3D con físicas avanzadas</p>
+                    </div>
+                    <div class="card bg-yellow text-center">
+                        <h3 class="mb-2">Prototipos</h3>
+                        <p>Desarrolla prototipos rápidos para validar ideas</p>
+                    </div>
+                    <div class="card bg-red text-center">
+                        <h3 class="mb-2">Aplicaciones</h3>
+                        <p>Crea aplicaciones interactivas multiplataforma</p>
+                    </div>
+                </div>
+                <div class="card bg-blue">
+                    <h3 class="mb-2">Casos de Uso Comunes</h3>
+                    <ul>
+                        <li>Videojuegos independientes</li>
+                        <li>Simulaciones educativas</li>
+                        <li>Visualizaciones interactivas</li>
+                        <li>Herramientas de productividad</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección: Paso a Paso -->
+        <section id="pasos" class="section">
+            <div class="card">
+                <h2 class="card-title">➡️ Paso a Paso</h2>
+                <div class="space-y-2">
+                    <div class="card bg-purple">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <div>
+                                <h3 class="mb-2">Descarga e Instalación</h3>
+                                <p>Obtén Godot desde godotengine.org</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card bg-purple">
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <div>
+                                <h3 class="mb-2">Crear Nuevo Proyecto</h3>
+                                <p>Selecciona 2D o 3D según tu necesidad</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card bg-purple">
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <div>
+                                <h3 class="mb-2">Configurar la Escena</h3>
+                                <p>Organiza los nodos y objetos del juego</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card bg-purple">
+                        <div class="step">
+                            <div class="step-number">4</div>
+                            <div>
+                                <h3 class="mb-2">Programar la Lógica</h3>
+                                <p>Escribe scripts en GDScript</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card bg-purple">
+                        <div class="step">
+                            <div class="step-number">5</div>
+                            <div>
+                                <h3 class="mb-2">Exportar el Proyecto</h3>
+                                <p>Compila para diferentes plataformas</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección: Exportación -->
+        <section id="final" class="section">
+            <div class="card">
+                <h2 class="card-title">⬇️ Exportación</h2>
+                <div class="card bg-green">
+                    <h3 class="mb-2">Proceso de Exportación</h3>
+                    <p>
+                        Ve a <code>Proyecto > Exportar</code> y selecciona la plataforma 
+                        de destino. Asegúrate de probar exhaustivamente antes de publicar.
+                    </p>
+                </div>
+                <div class="grid grid-cols-2">
+                    <div class="card bg-blue">
+                        <h3 class="mb-2">Plataformas Soportadas</h3>
+                        <ul>
+                            <li>Windows, Mac, Linux</li>
+                            <li>Android e iOS</li>
+                            <li>HTML5 (Web)</li>
+                            <li>Consolas</li>
+                        </ul>
+                    </div>
+                    <div class="card bg-red">
+                        <h3 class="mb-2">Recomendaciones</h3>
+                        <ul>
+                            <li>Optimiza recursos</li>
+                            <li>Revisa requisitos</li>
+                            <li>Prueba en dispositivo final</li>
+                            <li>Verifica licencias</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Creado por aprendices del Técnico en sistemas. Articulación con la media 🚀</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

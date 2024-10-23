@@ -1,0 +1,191 @@
+ /* Estilos generales */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #111827;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Encabezado */
+header {
+    background-color: #4caf50;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+/* Navegación */
+nav {
+    background-color: #1f2937;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.nav-button {
+    background-color: #374151;
+    border: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.nav-button:hover {
+    background-color: #4caf50;
+}
+
+.nav-button.active {
+    background-color: #4caf50;
+}
+
+/* Contenido principal */
+main {
+    flex: 1;
+    padding: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.card {
+    background-color: rgba(31, 41, 55, 0.5);
+    border: 1px solid #374151;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* Grid y flexbox para layouts */
+.grid {
+    display: grid;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.grid-cols-1 {
+    grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+    .grid-cols-2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid-cols-3 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Tarjetas de colores */
+.bg-blue {
+    background-color: rgba(59, 130, 246, 0.1);
+}
+
+.bg-purple {
+    background-color: rgba(124, 58, 237, 0.1);
+}
+
+.bg-green {
+    background-color: rgba(16, 185, 129, 0.1);
+}
+
+.bg-yellow {
+    background-color: rgba(245, 158, 11, 0.1);
+}
+
+.bg-red {
+    background-color: rgba(239, 68, 68, 0.1);
+}
+
+/* Listas */
+ul, ol {
+    padding-left: 1.5rem;
+    margin: 0.5rem 0;
+}
+
+li {
+    margin: 0.5rem 0;
+}
+
+/* Paso a paso */
+.step {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.step-number {
+    background-color: #4caf50;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+/* Pie de página */
+footer {
+    background-color: #4caf50;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Animaciones */
+.section {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.section.active {
+    display: block;
+    opacity: 1;
+}
+
+/* Código inline */
+code {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+}
+
+/* Utilidades */
+.text-center {
+    text-align: center;
+}
+
+.mb-2 {
+    margin-bottom: 0.5rem;
+}
+
+.space-y-2 > * + * {
+    margin-top: 0.5rem;
+}
